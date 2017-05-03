@@ -30,14 +30,23 @@ What characters denote optional parts of a command?
 Show the characters and give their name.
 
 ```md
-<!-- replace this comment with your answer -->
+
+"[]" square brackets are not typed and indicate that whatever is enclosed is optional syntax
+
+<!-- used:
+https://docs.oracle.com/cd/B14156_01/doc/B13812/html/sqcmd.htm -->
 ```
 
 What characters indicate a possible repeating element in a command?
 Show the characters and give their name.
 
 ```md
-<!-- replace this comment with your answer -->
+
+if ellipsis points follow after a second appearance of a bracketed term, it indicates loops or repetitions.
+The bracketed part indicates that the repetition is optional.
+
+<!-- used:
+https://docs.oracle.com/cd/B14156_01/doc/B13812/html/sqcmd.htm -->
 ```
 
 ## Creating or removing a database
@@ -45,13 +54,21 @@ Show the characters and give their name.
 What shell command would you execute to create a database named `mydb`?
 
 ```sh
-# replace this comment with your answer
+
+$ createdb mydb
+
+# used:
+# documentation
 ```
 
 What shell command would you execute to remove a database named `mydb`?
 
 ```sh
-# replace this comment with your answer
+
+$ dropdb mydb
+
+# used:
+# documentation
 ```
 
 ## Creating or removing a table
@@ -59,13 +76,13 @@ What shell command would you execute to remove a database named `mydb`?
 What two SQL keywords precede the table name when creating a database table?
 
 ```sql
-/* replace this comment with your answer */
+CREATE TABLE <name>;
 ```
 
 What is the SQL command to remove a database table named `mytable`?
 
 ```sql
-/* replace this comment with your answer */
+DROP TABLE mytable;
 ```
 
 ## Table row CRUD
@@ -74,23 +91,26 @@ What two SQL keywords precede the table name when populating
 a database table with rows?
 
 ```sql
-/* replace this comment with your answer */
+INSERT INTO <table_name>;
 ```
 
 What SQL keyword starts the command to retrieve data from a database table?
 
 ```sql
-/* replace this comment with your answer */
+SELECT * FROM
 ```
 
 What SQL command is used to update existing rows in a database table?
 
 ```sql
-/* replace this comment with your answer */
+UPDATE <table_name>
+SET <column_name>
+WHERE <condition>
 ```
 
 What SQL command is used to remove rows from a database table?
 
 ```sql
-/* replace this comment with your answer */
+DELETE FROM <table_name>
+WHERE <condition>
 ```
